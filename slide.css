@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Chau Philomene', sans-serif;
+  background-color: #0049b7;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background: #0049b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0; 
+}
+
+header {
+  background-color: #2396f2;
+  padding: 15px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {
+  background-color: #3a0ca3;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+li:hover {
+  background-color: #04bb85;
+  transition: 0.4s;
+}
+
+.slide {
+  width: 1011px;
+  height: 576px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.4s;
+  margin-top: 70px; 
+}
+
+.item-slide {
+  width: 5120px;
+  display: flex;
+}
+
+.images {
+  width: 1035px;
+  height: 576px;
+}
+
+#atual {
+  transition: all 2s;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
+  margin-top: -5px;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+}
+
+#voltar {
+  top: 50%;
+  left: 10%;
+}
+
+#avancar {
+  top: 50%;
+  right: 10%;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+  position: absolute;
+  width: 1024px;
+}
+
+.position div {
+  transition: all 0.5s;
+  border: 3px solid #fff;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.position div:hover {
+  background: #fff;
+}
+
+.primeira {
+  transition: all 0.5s;
+  background: #fff;
+}
+
+img {
+  height: auto;
+  width: 93.5rem;
+}

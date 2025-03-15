@@ -1,0 +1,47 @@
+body {
+    font-family: 'Chau Philomene', sans-serif;
+    background-color: #0049b7;
+    color: white;
+}
+
+header {
+    background-color: #2396f2;
+    padding: 5px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+} 
+
+li {
+    background-color:#3a0ca3;
+    border-radius: 30px; 
+    padding: 15px;
+}
+
+li:hover {
+    background-color: #04bb85;
+    transition: 0.4s;
+} 
+
+img {
+    height: auto;
+    width: 93.5rem;
+}
+
+
+

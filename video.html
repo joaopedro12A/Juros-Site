@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/936b50e383.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="slide.css">
+  <title>Carrossel</title>
+  <link rel="shortcut icon" href="./mathematics.png" type="image/x-icon">
+</head>
+<header>
+  <nav>
+    <ul>
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./fixa.html">RENDA FIXA</a></li>
+        <li><a href="./variavel.html">RENDA VARIÁVEL</a></li>
+        <li><a href="./video.html">VIDEOAULAS</a></li>
+        <li><a href="./index.html"">CALCULADORA</a></li>
+        <li><a href="./Nós.html">SOBRE NÓS</a></li>
+
+    </ul>
+</nav>
+<body>
+  </header>
+  <div class="slide">
+    <div class="item-slide">
+      <div id="voltar" class="btn">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div id="avancar" class="btn">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+
+      <div id="atual" class="images">
+        <h1>AULA 1</h1>
+        <iframe width="1010" height="560" src="https://www.youtube.com/embed/Tfy9tq7zN-s?si=eNSWgJUVTZxq5wNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="images">
+        <h1>AULA 2</h1>
+        <iframe width="990" height="560" src="https://www.youtube.com/embed/Tfy9tq7zN-s?si=eNSWgJUVTZxq5wNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="images">
+        <h1>AULA 3</h1>
+        <iframe width="990" height="560" src="https://www.youtube.com/embed/Tfy9tq7zN-s?si=eNSWgJUVTZxq5wNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="images">
+        <h1>AULA 4</h1>
+        <iframe width="990" height="560" src="https://www.youtube.com/embed/Tfy9tq7zN-s?si=eNSWgJUVTZxq5wNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="position">
+    </div>
+  </div>
+</body>
+<script>
+  var position = document.querySelector('.position')
+  var quant = document.querySelectorAll('.item-slide .images')
+  var atual = 0
+  var imagem = document.getElementById('atual')
+  var avancar = document.getElementById('avancar')
+  var voltar = document.getElementById('voltar')
+  var rolar = true
+
+  for (let i = 0; i < quant.length; i++) {
+    var div = document.createElement('div')
+    div.id = i
+    position.appendChild(div)
+  }
+  document.getElementById('0').classList.add('primeira')
+
+  var pos = document.querySelectorAll('.position div')
+
+  for (let i = 0; i < pos.length; i++) {
+    pos[i].addEventListener('click', () => {
+      atual = pos[i].id
+      rolar = false
+      slide()
+    })
+  }
+
+  voltar.addEventListener('click', () => {
+    atual--
+    rolar = false
+    slide()
+  })
+
+  avancar.addEventListener('click', () => {
+    atual++
+    rolar = false
+    slide()
+  })
+
+  function slide() {
+    if (atual >= quant.length) {
+      atual = 0;
+    } else if (atual < 0) {
+      atual = quant.length - 1
+    }
+
+    document.querySelector('.primeira').classList.remove('primeira')
+    imagem.style.marginLeft = -1024 * atual +'px'
+    document.getElementById(atual).classList.add('primeira')
+
+  }
+
+  setInterval(()=>{
+    if(rolar){
+      atual++
+      slide()
+    }else{
+      rolar = true
+    }
+  },10000)
+
+</script>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0049b7;
+}
+
+.calculator-container {
+  background: #000;
+  padding: 24px 12px 12px;
+  border-radius: 6px;
+}
+
+.screen-display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #fff;
+  font-size: 20px;
+  height: 34px;
+  margin: 0 6px;
+  padding-right: 6px;
+}
+
+.calculator-buttons {
+  border-spacing: 6px;
+}
+
+td {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background: #3b3939;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Chau Philomene', sans-serif;
+  background-color: #0049b7;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  background-color: #2396f2;
+  width: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {
+  background-color: #3a0ca3;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+li:hover {
+  background-color: #04bb85;
+  transition: 0.4s;
+}
+
+.calculator-container {
+  background: #000;
+  padding: 24px 12px 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.screen-display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #fff;
+  font-size: 20px;
+  height: 34px;
+  margin: 0 6px;
+  padding-right: 6px;
+  color: black;
+}
+
+.calculator-buttons {
+  border-spacing: 6px;
+}
+
+td {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background: #3b3939;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+

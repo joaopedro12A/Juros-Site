@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Calculadora Simples</title>
+  <link rel="shortcut icon" href="./mathematics.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="./fixa.html">RENDA FIXA</a></li>
+            <li><a href="./variavel.html">RENDA VARIÁVEL</a></li>
+            <li><a href="./video.html">VIDEOAULAS</a></li>
+            <li><a href="./index.html">CALCULADORA</a></li>
+            <li><a href="./Nós.html">SOBRE NÓS</a></li>
+
+        </ul>
+    </nav>
+</header>
+  <div class="calculator-container">
+    <span class="screen-display">0</span>
+
+    <table class="calculator-buttons">
+      <tr>
+        <td data-clear-all>C</td>
+        <td data-delete>&#60;</td>
+        <td data-operator="x">x</td>
+        <td data-operator="&#247;">&#247;</td>
+      </tr>
+
+      <tr>
+        <td data-number="7">7</td>
+        <td data-number="8">8</td>
+        <td data-number="9">9</td>
+        <td data-operator="-">-</td>
+      </tr>
+
+      <tr>
+        <td data-number="4">4</td>
+        <td data-number="5">5</td>
+        <td data-number="6">6</td>
+        <td data-operator="+">+</td>
+      </tr>
+
+      <tr>
+        <td data-number="1">1</td>
+        <td data-number="2">2</td>
+        <td data-number="3">3</td>
+        <td rowspan="2" data-equal="=">=</td>
+      </tr>
+
+      <tr>
+        <td colspan="2" data-number="0">0</td>
+        <td data-number=".">.</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<script src="./scripts.js"></script>
+</html>
